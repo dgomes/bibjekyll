@@ -45,4 +45,4 @@ This plugin is released under the MIT License.
 Contact
 -------
 
-You can reach me at Pablo de Oliveira <pablo@sifflez.org>.
+You can reach me at Diogo Gomes <diogogomes@gmail.com>.
