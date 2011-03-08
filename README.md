@@ -1,13 +1,18 @@
-This plugin interfaces [bibtex2html](http://www.lri.fr/~filliatr/bibtex2html/) with Jekyll
-to generate an html bibliography list from bibtex entries.
-For this to work, the bibtex entries must be enclosed in a special liquid block:
+Fork Info
+----
 
-    {% bibtex _plugins/style.bst %}
-      ....
-    {% endbibtex %}
+This Plugin is a fork from [Pablo Oliveira](https://github.com/pablooliveira/bibjekyll) and intends to change from a Liquid Block into a Tag
+
+The plugin interfaces [bibtex2html](http://www.lri.fr/~filliatr/bibtex2html/) with Jekyll
+to generate an html bibliography list from bibtex entries.
+For this to work, the bibtex entries must be enclosed in a special liquid Tag:
+
+    {% bibtex _plugins/style.bst /complete/path/to/your/bibtex_file.bib %}
 
 where `_plugins/style.bst` is a bibtex style file (which you can, of course, 
 rename or move to another directory).
+
+and where `/complete/path/to/your/bibtex_file.bib` is a bibtex file containing your references (and which requires the full path to it, since it assumes that you dont keep it in your jekyll path)
 
 Setup
 -----
@@ -23,7 +28,7 @@ Example
 You can find a short usage example inside the `example/` directory
 (the actual pdf files are missing, so the links will be broken).
 This code is what I use (with some css minor differences) to generate
-my own [publication list](http://www.sifflez.org/publications).
+my own [publication list](http://www.diogogomes.com/cv/).
 
 Limitations
 -----------
