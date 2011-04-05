@@ -21,11 +21,6 @@ module Jekyll
       params.split(" ").map(&:strip)
     end
 
-    def transformUrls(domain,content)
-       baseurl = "%s/wp-content/uploads/" % domain
-       return content.gsub(baseurl,"/images/")
-    end
-
     def initialize(tag_name, params, tokens)
       super
       args = split_params(params)
